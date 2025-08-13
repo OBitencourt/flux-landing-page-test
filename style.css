@@ -67,16 +67,15 @@ header nav a:hover {
 
 
 .ctaHeader {
-    padding: 16px;
-    border-radius: 8px;
+    padding: 16px 24px;
+    border-radius: 0.7rem;
     background-color: var(--cp);
     font-weight: 600;
-    border: none;
-}
-
-.ctaHeader a {
+    border: 2px solid var(--cp);
+    box-shadow: inset 0px 0px 12px var(--cs);
     text-decoration: none;
-    color: var(--background);
+    color: #1e1e1e;
+    font-size: 0.95rem;
 }
 
 /* HERO SECTION */
@@ -90,6 +89,7 @@ header nav a:hover {
     border: 0.5px solid var(--border);
     padding: 16px;
     display: flex;
+    position: relative;
 }
 
 .ctaWrappers {
@@ -100,18 +100,21 @@ header nav a:hover {
 }
 
 .ctaHeroOne {
-    padding: 24px 48px;
+    padding: 18px 36px;
     border-radius: 34px;
-    border: none;
+    border: 2px solid #323232;
     font-weight: 600;
     font-size: 1.1rem;
-    background-color: #ffffff;
+    background-color: #1e1e1e;
     transition: all 150ms ease-in-out;
     cursor: pointer;
+    color: var(--text-muted);
 }
 
 .ctaHeroOne:hover {
     background-color: var(--cp);
+    color: var(--foreground);
+    transform: translateY(-4px) translateX(4px);
 }
 
 .ctaHeroTwo {
@@ -132,6 +135,47 @@ header nav a:hover {
 .ctaHeroTwo img {
     width: 25px;
     height: 25px;
+}
+
+.imagesWrapper {
+    position: absolute;
+    display: flex;
+    top: -1px;
+    left: 0;
+    margin: 0 auto;
+}
+
+.imagesWrapper img{
+    width: 667px;
+    height: auto;
+    border-radius: 3rem;
+    
+}
+
+#details {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 10%;
+    left: 32%;
+    margin: 0 auto;
+}
+
+.heroTextWrapper {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+.heroTextWrapper h3{
+    color: var(--text-muted);
+    text-align: center;
+    font-weight: 500;
+}
+
+.heroTextWrapper img{
+    width: 250px;
+    height: auoto;
 }
 
 
